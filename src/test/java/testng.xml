@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Automation Suite" parallel="methods" thread-count="2">
+
+<listeners>
+	<listener class-name ="Analyser.MyTransformer" />
+</listeners>
+
+
+	<test name="Different TestNG Features">
+	
+		<parameter name="url" value = "https://www.gmail.com"/>
+		<parameter name="emailId" value ="vivekplaymusic@gmail.com"/>
+	
+		
+	
+	<classes>
+
+
+		<class name ="RetryTest.RetryFailedTestClassWise" />
+
+		
+				
+	</classes>
+	
+	</test>
+	
+	</suite>

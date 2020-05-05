@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: testngBasics.ExpectedExceptionsTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+testngBasics.ExpectedExceptionsTest.test1()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Test cannot be resolved to a type
+
+	at testngBasics.ExpectedExceptionsTest.test1(ExpectedExceptionsTest.java:7)
+

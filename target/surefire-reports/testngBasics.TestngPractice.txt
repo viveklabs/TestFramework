@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: testngBasics.TestngPractice
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+testngBasics.TestngPractice.testMethod4()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Test cannot be resolved to a type
+
+	at testngBasics.TestngPractice.testMethod4(TestngPractice.java:65)
+
+testngBasics.TestngPractice.testMethod3()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Test cannot be resolved to a type
+
+	at testngBasics.TestngPractice.testMethod3(TestngPractice.java:58)
+
+testngBasics.TestngPractice.testMethod1()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Test cannot be resolved to a type
+
+	at testngBasics.TestngPractice.testMethod1(TestngPractice.java:44)
+
+testngBasics.TestngPractice.testMethod2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Test cannot be resolved to a type
+
+	at testngBasics.TestngPractice.testMethod2(TestngPractice.java:51)
+
+testngBasics.TestngPractice.testMethod5()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Test cannot be resolved to a type
+
+	at testngBasics.TestngPractice.testMethod5(TestngPractice.java:72)
+
+testngBasics.TestngPractice.testMethod6()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Test cannot be resolved to a type
+
+	at testngBasics.TestngPractice.testMethod6(TestngPractice.java:79)
+
