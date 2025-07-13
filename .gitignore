@@ -1,0 +1,34 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.gz
+
+# Log files
+*.log
+logs/
+
+# IDE-specific files (e.g., for IntelliJ, Eclipse, VS Code)
+.idea/
+.project
+.classpath
+.settings/
+*.iml
+.vscode/
+
+# Maven build directory
+target/
+
+# Gradle build directory
+build/
+.gradle/
+
+# Temporary files
+*~
+*.bak
+*.tmp
