@@ -1,6 +1,7 @@
 package Runner;
 
 import org.testng.TestNG;
+import org.testng.annotations.Test;
 import org.testng.xml.*;
 
 import java.util.ArrayList;
@@ -10,7 +11,9 @@ import java.io.FileWriter; // Import this
 import java.io.IOException; // Import this
 
 public class GenerateTestNGXMLAndRun1 {
-    public static void main(String[] args) {
+
+    @Test
+    public void TestRunner () {
         // Create an XmlSuite
         XmlSuite suite = new XmlSuite();
         suite.setName("PracticeSuite");
