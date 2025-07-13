@@ -12,28 +12,28 @@ import org.testng.annotations.Test;
 
 public class TestngPractice {
 	
-	@BeforeSuite
+	@BeforeSuite (alwaysRun = true)
 	public void beforeSuite() {
 		
 		System.out.println("Before Suite");
 		
 	}
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void beforeClass() {
 		
 		System.out.println("Before Class");
 		
 	}
 	
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void beforeTest() {
 		
 		System.out.println("Before test");
 		
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void beforeMethod() {
 		
 		System.out.println("Before Method");
@@ -84,14 +84,14 @@ public class TestngPractice {
 	}
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void afterMethod() {
 		
 		System.out.println("After Method");
 		
 	}
 	
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void afterTest() {
 		
 		System.out.println("After test");
@@ -99,14 +99,14 @@ public class TestngPractice {
 	}
 	
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		
 		System.out.println("After Class");
 		
 	}
 	
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void afterSuite() {
 		
 		System.out.println("After suite");

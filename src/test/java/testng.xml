@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<suite name="TestNG Automation Suite" parallel="methods" thread-count="2">
-
-<listeners>
-	<listener class-name ="Analyser.MyTransformer" />
-</listeners>
-
-
-	<test name="Different TestNG Features">
-	
-		<parameter name="url" value = "https://www.gmail.com"/>
-		<parameter name="emailId" value ="vivekplaymusic@gmail.com"/>
-	
-		
-	
-	<classes>
-
-
-		<class name ="testngBasics.GmailTest" />
-
-		
-				
-	</classes>
-	
-	</test>
-	
-	</suite>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PracticeSuite">
+	<test thread-count="5" name="MyDynamicTest">
+		<groups>
+			<run>
+				<include name="minor"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="testngBasics.TestngPractice"/>
+		</classes>
+	</test> <!-- MyDynamicTest -->
+</suite> <!-- PracticeSuite -->

@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Automation Suite" duration-ms="50858" started-at="2020-05-08T14:52:53 IST" finished-at="2020-05-08T14:53:44 IST">
+  <suite started-at="2025-07-12T21:24:26 PDT" name="PracticeSuite" finished-at="2025-07-12T21:24:26 PDT" duration-ms="11">
     <groups>
+      <group name="minor">
+        <method signature="TestngPractice.testMethod4()[pri:3, instance:testngBasics.TestngPractice@4f51b3e0]" name="testMethod4" class="testngBasics.TestngPractice"/>
+        <method signature="TestngPractice.testMethod1()[pri:6, instance:testngBasics.TestngPractice@4f51b3e0]" name="testMethod1" class="testngBasics.TestngPractice"/>
+      </group> <!-- minor -->
     </groups>
-    <test name="Different TestNG Features" duration-ms="50858" started-at="2020-05-08T14:52:53 IST" finished-at="2020-05-08T14:53:44 IST">
-      <class name="testngBasics.GmailTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testngBasics.GmailTest@7c29daf3]" name="setUp" is-config="true" duration-ms="47244" started-at="2020-05-08T14:52:54 IST" finished-at="2020-05-08T14:53:41 IST">
+    <test started-at="2025-07-12T21:24:26 PDT" name="MyDynamicTest" finished-at="2025-07-12T21:24:26 PDT" duration-ms="11">
+      <class name="testngBasics.TestngPractice">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="beforeSuite" finished-at="2025-07-12T21:24:26 PDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getTitle()[pri:0, instance:testngBasics.GmailTest@7c29daf3]" name="getTitle" duration-ms="77" started-at="2020-05-08T14:53:42 IST" finished-at="2020-05-08T14:53:42 IST">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="beforeTest" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method status="PASS" signature="verifyLogo()[pri:0, instance:testngBasics.GmailTest@7c29daf3]" name="verifyLogo" duration-ms="472" started-at="2020-05-08T14:53:42 IST" finished-at="2020-05-08T14:53:42 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="beforeClass" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testngBasics.GmailTest@7c29daf3]" name="tearDown" is-config="true" duration-ms="1603" started-at="2020-05-08T14:53:42 IST" finished-at="2020-05-08T14:53:44 IST">
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="beforeMethod" finished-at="2025-07-12T21:24:26 PDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testngBasics.GmailTest -->
-    </test> <!-- Different TestNG Features -->
-  </suite> <!-- TestNG Automation Suite -->
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethod4()[pri:3, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="testMethod4" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="afterMethod" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testMethod1()[pri:6, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="testMethod1" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="beforeMethod" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="afterMethod" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="afterClass" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="afterTest" finished-at="2025-07-12T21:24:26 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testngBasics.TestngPractice@4f51b3e0]" started-at="2025-07-12T21:24:26 PDT" name="afterSuite" finished-at="2025-07-12T21:24:26 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testngBasics.TestngPractice -->
+    </test> <!-- MyDynamicTest -->
+  </suite> <!-- PracticeSuite -->
 </testng-results>
