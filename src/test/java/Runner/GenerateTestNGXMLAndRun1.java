@@ -30,7 +30,7 @@ public class GenerateTestNGXMLAndRun1 {
         // --- Configure groups to include only "minor" ---
         XmlGroups groups = new XmlGroups();
         XmlRun run = new XmlRun();
-        run.onInclude("minor"); // Keep this as it is
+        run.onInclude("tiny"); // Keep this as it is
         groups.setRun(run);
         test.setGroups(groups);
 
