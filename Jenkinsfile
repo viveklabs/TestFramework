@@ -8,7 +8,7 @@
         parameters {
         choice(name: 'Website' , choices: ['','Google','Facebook'])
         choice(name: 'Thread_Count', choices: ['5','4','3','2','1'], description: 'Number of threads to use')
-        string(name: 'Build_By', defaultValue: 'Vivek P')
+        string(name: 'Build_By', defaultValue: 'VivekP')
         }
 
         tools {
