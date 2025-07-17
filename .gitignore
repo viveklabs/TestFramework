@@ -8,7 +8,6 @@
 *.zip
 *.tar
 *.gz
-*.html
 
 # Log files
 *.log
@@ -24,6 +23,7 @@ logs/
 
 # Maven build directory
 target/
+test-output/
 
 # Gradle build directory
 build/
