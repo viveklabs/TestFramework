@@ -1,6 +1,7 @@
 package Runner;
 
 import org.testng.TestNG;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.xml.*;
 
@@ -11,6 +12,13 @@ import java.io.FileWriter; // Import this
 import java.io.IOException; // Import this
 
 public class GenerateTestNGXMLAndRun1 {
+
+    @BeforeSuite(alwaysRun = true)
+    public void initSuite() {
+        System.out.println(System.getProperty("website", "Gmail"));
+        System.out.println(System.getProperty("threadCount", "1"));
+        System.out.println(System.getProperty("buildBy", "Prasad"));
+    }
 
     @Test
     public void TestRunner () {

@@ -8,6 +8,7 @@
 *.zip
 *.tar
 *.gz
+*.html
 
 # Log files
 *.log
