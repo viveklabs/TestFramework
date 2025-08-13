@@ -7,9 +7,9 @@ public class RegularExpress {
 
     public static void main (String[] args) {
 
-        String input = "[2024-08-01 10:30:05] ERROR - Connection timeout for service_A";
+        String input = "some test here. [2024-08-01 10:30:05] ERROR - Connection timeout for service_A";
 
-        Pattern p = Pattern.compile("^(\\[\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}\\])\\s(\\w+)\\s\\-\\s(.*)$");
+        Pattern p = Pattern.compile("(\\[\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}\\])\\s(\\w+)\\s\\-\\s(.*)$");
         Matcher m = p.matcher(input);
         while (m.find()){
             System.out.println(m.group(0)); // Output :entire input
