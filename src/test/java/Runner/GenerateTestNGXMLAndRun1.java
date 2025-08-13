@@ -25,6 +25,8 @@ public class GenerateTestNGXMLAndRun1 {
         // Create an XmlSuite
         XmlSuite suite = new XmlSuite();
         suite.setName("PracticeSuite");
+        suite.setParallel(XmlSuite.ParallelMode.TESTS);
+        suite.setThreadCount(2);
 
         // Create an XmlTest
         XmlTest test = new XmlTest(suite);

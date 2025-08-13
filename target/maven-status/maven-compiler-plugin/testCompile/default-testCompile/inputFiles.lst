@@ -1,6 +1,10 @@
+/Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/Abstractions/ActionAbstract.java
+/Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/Abstractions/ActionInterface.java
+/Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/Abstractions/primary.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/Analyser/MyTransformer.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/Analyser/RetryAnalyser.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/Assertions/SoftAssertionTest.java
+/Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/JavaPractice.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/RetryTest/RetryFailedTestClassWise.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/RetryTest/RunFailedTestWise.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/Runner/GenerateTestNGXMLAndRun.java
@@ -11,6 +15,9 @@
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/ExpectedExceptionsTest.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/GmailTest.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/InvocationCountTest.java
+/Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/PolicyInfo__SL.java
+/Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/Policy_Info__AL.java
+/Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/SeleniumObject.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/TestngFeatures.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngBasics/TestngPractice.java
 /Users/vivekpeak/IdeaProjects/TestFramework/src/test/java/testngDataDriven/GmailLogin.java

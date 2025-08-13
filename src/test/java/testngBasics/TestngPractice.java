@@ -41,7 +41,7 @@ public class TestngPractice {
 	}
 	
 	//without priority keyword, Eclipse will run Test randomly
-	@Test(priority=6,groups="minor")
+	@Test(priority=6,groups={"minor","major"})
 	public void testMethod1() {
 		
 		System.out.println("Test Method - 1");
@@ -76,7 +76,7 @@ public class TestngPractice {
 		
 	}
 	
-	@Test(priority=1,groups="tiny")
+	@Test(groups="tiny")
 	public void testMethod6() {
 		
 		System.out.println("Test Method - 6");

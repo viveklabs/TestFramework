@@ -25,8 +25,8 @@ public class GmailTest {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(6000, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(6000, TimeUnit.SECONDS);
 		
 		driver.get("https://www.gmail.com");
 		
