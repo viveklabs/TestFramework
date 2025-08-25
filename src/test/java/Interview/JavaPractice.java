@@ -2,6 +2,8 @@ package Interview;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class JavaPractice {
 
@@ -92,7 +94,10 @@ public class JavaPractice {
 /*        caseCheck();*/
 
         //String Buffer and Builder
-        checkString();
+/*        checkString();*/
+
+        //Duplicate values using Stream
+        findDuplicateUsingStream();
     }
 
 
@@ -568,5 +573,19 @@ public class JavaPractice {
         sb.append("Is");
         System.out.println(sb);
         System.out.println(sb.toString().compareTo(sb1.toString()));
+    }
+
+    public static void findDuplicateUsingStream() {
+        List<String> list = Arrays.asList("Apple","Orange","Apple","Banana","Orange","Mango");
+
+        Map<String,Long> duplicateMap = list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+
+        Set<String> duplicateKey = duplicateMap.entrySet().stream()
+                .filter(entry -> entry.getValue() > 1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toSet());
+
+        System.out.println(duplicateKey);
+
     }
 }
