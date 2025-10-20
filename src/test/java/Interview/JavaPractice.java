@@ -3,121 +3,121 @@ package Interview;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class JavaPractice {
 
     public static void main (String[] args) {
-/*        String input = "AABBBCCCaaaa";
-        System.out.println(getCharacterCount(input));
+//        String input = "Vivek";
+//        System.out.println(getCharacterCount(input));
 
         // Second Largest Number
-        int[] arr = {10,25,5,20,30,15,30,25};
-        secondLargetNumber(arr);
+//        int[] arr = {10,25,5,20,30,15,30,25};
+//        secondLargetNumber(arr);
 
         //Extract Numbers
-        String mixInput = "pran123tes45t";
-        extractNumbers(mixInput);
+//        String mixInput = "pran123tes45t";
+//        extractNumbers(mixInput);
 
         //FInd Largest Numbers
-        int[] maxArr = {10,34,23,76,44};
-        findLargetNumber(maxArr);*/
+//        int[] maxArr = {10,34,23,76,44};
+//        findLargetNumber(maxArr);
 
         //Find word occurance
-        String word = "I am learning learning for for for interview interview for tomorrow tomorrow I I I";
-/*      findWordOccurance(word);
-        countCharacters(word);
-        countCharactersAnotherWay(word,"o");
-        removeDuplicateWord(word);*/
+        String word = "I am learning learning for for for interview interview learning for tomorrow tomorrow I I I";
+//        findWordOccurance(word);
+//        countCharacters(word);
+//        countCharactersAnotherWay(word,"o");
+//        removeDuplicateWord(word);
 
         // check for ANAGRAM
-/*        String w1 = "FETTER";
-        String w2 = "tetefr";
-        validateAnagram(w1,w2);*/
+//        String w1 = "FETTER";
+//        String w2 = "tetefr";
+//        validateAnagram(w1,w2);
 
         // Find first duplicate character
-/*        findFirstNonRepetingWord("programming");*/
+//        findFirstNonRepetingWord("programming");
 
         //Reverse a word
-/*        reverseAString("vivek prasad");*/
+//        reverseAString("vivek prasad");
 
         //Extract String
-/*        extractString("www.google.com");*/
+        extractString("www.google.com");
 
         // Palindrome check
-/*        if (isPalindrome("PPPP")) {
-            System.out.println("Palindrome");
-        }else {
-            System.out.println("Not Plaindrome");
-        }*/
+//        if (isPalindrome("kayak")) {
+//            System.out.println("Palindrome");
+//        }else {
+//            System.out.println("Not Plaindrome");
+//        }
 
         //Reverse each word in a sentence
-/*        reverseWordsInSentence("This is my world");*/
+//        reverseWordsInSentence("This is my world");
 
         //Find largest and smallest Number
-/*        findLargestSmallestNumber(new int[] {99,20,21,33,11,4,0,-11,-12,32});*/
+//        findLargestSmallestNumber(new int[] {99,20,21,33,11,4,0,-11,-12,32});
 
         //Find Missing Number
-/*        findMissingNumber(new int[] {1,2,3,4,5,6,7,8,9});*/
+//        findMissingNumber(new int[] {1,2,3,4,5,6,7,8,9});
 
         //Duplicate number is an array
-/*        findDupNumInArray(new int[] {2,3,4,2,3,6,4,7,8,9});*/
+//        findDupNumInArray(new int[] {2,3,4,2,3,6,4,7,8,9});
 
         //Reverse a number
-/*        reverseANumber(961256);*/
+//        reverseANumber(961256);
 
         //Fibonacci Seq
-/*        printFibinnaci(10);*/
+//        printFibinnaci(10);
 
         //Factorial
-/*        findFactorial(5);*/
-/*        System.out.println(findFactRecurssion(4));*/
+//        findFactorial(5);
+//        System.out.println(findFactRecurssion(4));
 
         //Print Start Pattern
-/*        printStar(5);*/
-/*        printPyramidStart(5);*/
+//        printStar(5);
+//        printPyramidStart(5);
 
         //Update Array
-/*        String[] arr = new String[]{"Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"};
-        updateArr(arr);*/
+//        String[] arr = new String[]{"Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"};
+//        updateArr(arr);
 
         //Check Equals
-/*        checkEquals();*/
+//        checkEquals();
 
         //Check Leap year
-/*        checkLeapYear(2022);*/
+//        checkLeapYear(2022);
 
         //ThreadSafe Collection
-/*        threadSafeCollection();*/
+//        threadSafeCollection();
 
         //Switch Case
-/*        caseCheck();*/
+//        caseCheck();
 
         //String Buffer and Builder
-/*        checkString();*/
+//        checkString();
 
         //Duplicate values using Stream
-        findDuplicateUsingStream();
+//        findDuplicateUsingStream();
+
+        //extract name from json
+        extractNameFromJson();
     }
 
 
     public static String getCharacterCount(String input) {
         StringBuilder convertedString = new StringBuilder();
+        // vivek
+        Map<Character,Integer> charMap = new LinkedHashMap<>();
 
-        int count = 1;
-        char currentChar = input.charAt(0);
-
-        for (int i=1;i< input.length();i++){
-
-            if (input.charAt(i) == currentChar){
-                count++;
-            } else {
-                convertedString.append(currentChar).append(count);
-                currentChar = input.charAt(i);
-                count = 1;
-            }
+        for (char c : input.toLowerCase().toCharArray()){
+            charMap.put(c,charMap.getOrDefault(c,0) +1);
         }
-        convertedString.append(currentChar).append(count);
+
+        for (Map.Entry<Character,Integer> entry : charMap.entrySet()){
+            convertedString.append(entry.getKey()).append(entry.getValue());
+        }
         return convertedString.toString();
     }
 
@@ -144,7 +144,9 @@ public class JavaPractice {
 
     public static void findLargetNumber(int[] arr){
         int max = Arrays.stream(arr).max().getAsInt();
+        int min = Arrays.stream(arr).min().getAsInt();
         System.out.println(max);
+        System.out.println(min);
     }
 
     public static void findWordOccurance (String word) {
@@ -170,11 +172,13 @@ public class JavaPractice {
         int count = 1;
         for (char c : ch){
             if (c != ' ') {
-                if (!map.containsKey(c)){
-                    map.put(c,count);
-                } else {
-                    map.put(c, map.get(c)+1);
-                }
+
+                map.put(c, map.getOrDefault(c,0)+1);
+//                if (!map.containsKey(c)){
+//                    map.put(c,count);
+//                } else {
+//                    map.put(c, map.get(c)+1);
+//                }
             }
         }
         for (char key : map.keySet()) {
@@ -587,5 +591,70 @@ public class JavaPractice {
 
         System.out.println(duplicateKey);
 
+    }
+
+    public static void extractNameFromJson(){ //LTIMindtree Interview
+        String json = "[\n" +
+                "  {\n" +
+                "    \"employeeId\": 1,\n" +
+                "    \"name\": \"Alex ore\",\n" +
+                "    \"jobTitle\": \"Senior Specialist - Quality Engineering\",\n" +
+                "    \"department\": \"Quality Assurance\",\n" +
+                "    \"location\": \"Karnataka\",\n" +
+                "    \"active\": true\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"employeeId\": 2,\n" +
+                "    \"name\": \"Anita Desai\",\n" +
+                "    \"jobTitle\": \"Software Engineer\",\n" +
+                "    \"department\": \"Development\",\n" +
+                "    \"location\": \"Hyderabad\",\n" +
+                "    \"active\": true\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"employeeId\": 3,\n" +
+                "    \"name\": \"Ravi Kumar\",\n" +
+                "    \"jobTitle\": \"DevOps Engineer\",\n" +
+                "    \"department\": \"Infrastructure\",\n" +
+                "    \"location\": \"Bangalore\",\n" +
+                "    \"active\": false\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"employeeId\": 4,\n" +
+                "    \"name\": \"Meera Joshi\",\n" +
+                "    \"jobTitle\": \"Data Analyst\",\n" +
+                "    \"department\": \"Analytics\",\n" +
+                "    \"location\": \"Pune\",\n" +
+                "    \"active\": true\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"employeeId\": 5,\n" +
+                "    \"name\": \"Suresh Patil\",\n" +
+                "    \"jobTitle\": \"Project Manager\",\n" +
+                "    \"department\": \"PMO\",\n" +
+                "    \"location\": \"Mumbai\",\n" +
+                "    \"active\": true\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"employeeId\": 6,\n" +
+                "    \"name\": \"Priya Nair\",\n" +
+                "    \"jobTitle\": \"UX Designer\",\n" +
+                "    \"department\": \"Design\",\n" +
+                "    \"location\": \"Chennai\",\n" +
+                "    \"active\": false\n" +
+                "  }";
+
+        String nameRegex = "\"name\"\\s*:\\s*\"([^\"]*)\"";
+        String deptRegex = "\"department\"\\s*:\\s*\"([^\"]*)\"";
+        Pattern p = Pattern.compile(nameRegex);
+        Matcher m = p.matcher(json);
+        Pattern p1 = Pattern.compile(deptRegex);
+        Matcher m1 = p1.matcher(json);
+
+        while (m.find() && m1.find()){
+            String name = m.group(1);
+            String dept = m1.group(1);
+            System.out.println(name +" : "+ dept);
+        }
     }
 }

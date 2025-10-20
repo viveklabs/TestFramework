@@ -7,13 +7,11 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.Assert;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class TestClass {
+
+public class NagaaroInterview {
 
     public static void main(String[] args) {
 
@@ -53,17 +51,17 @@ public class TestClass {
 
         //-------
 
- /*       String s1 = "nagarro123";
-       // String s2 = s1.substring(0,7);
-        String s2 = s1.replaceAll("[0-9]","");
-       // String s3 = s1.substring(7);
-        String s3 = s1.replaceAll("[^0-9]","");
-        char[] ch = s2.toCharArray();
-        String reverseWord="";
-        for (int i = ch.length-1;i>=0;i--){
-            reverseWord = reverseWord + String.valueOf(ch[i]);
-        }
-        System.out.println(reverseWord+s3);*/
+//        String s1 = "nagarro123";
+//       // String s2 = s1.substring(0,7);
+//        String s2 = s1.replaceAll("[0-9]","");
+//       // String s3 = s1.substring(7);
+//        String s3 = s1.replaceAll("[^0-9]","");
+//        char[] ch = s2.toCharArray();
+//        String reverseWord="";
+//        for (int i = ch.length-1;i>=0;i--){
+//            reverseWord = reverseWord + ch[i];
+//        }
+//        System.out.println(reverseWord+s3);
 
         //------------
 
@@ -75,6 +73,7 @@ public class TestClass {
         ResponseSpecification respSpec = new ResponseSpecBuilder()
                 .expectContentType(ContentType.JSON)
                 .expectBody("name",equalTo("morpheus"))
+                .expectStatusCode(200)
                 .build();
 
 
