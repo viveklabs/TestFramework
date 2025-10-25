@@ -6,7 +6,6 @@ test/utils/getDataFromExcel.class
 testngDataDriven/GmailLoginDataProviderTest.class
 com/excel/utility/Xls_Reader.class
 RetryTest/RunFailedTestWise.class
-JavaPractice.class
 Analyser/MyTransformer.class
 testngBasics/Policy_Info__AL.class
 Runner/GenerateTestNGXMLAndRun1.class
